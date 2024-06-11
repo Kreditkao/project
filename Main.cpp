@@ -2,6 +2,11 @@
 #include "Client.h"
 #include "Admin.h"
 #include <iostream>
+#include <algorithm>
+#include <vector>
+
+
+
 
 #define CREATE_ARRAY 1
 using namespace std;
@@ -61,7 +66,7 @@ int main()
             {"AUDI", 22000},
             {"Porshe", 14000},
             {"Mercedec", 8000},
-            {"Wolwo", 9800},
+            {"Wolwo", 9800}
         };  
         sort(products.begin(), products.end(), compareProducts);
 
@@ -69,7 +74,12 @@ int main()
         for (const Product& product : products) {
             cout << product.name << ": " << product.price << endl;
         }
-
+        cout << "------------------------------------\n";
+        cout << "               Menu\n";
+        cout << "1 - show cars\n";
+        cout << "2 - show clients\n";
+        cout << "------------------------------------\n";
+        cin >> choise;
     }
     
     else if (choise == 2)
@@ -77,7 +87,7 @@ int main()
         int NClients = 0;
         Client* clients = nullptr;
     #if CREATE_ARRAY == 1 
-        NClients 3;
+        NClients = 3;
         clients = new Client[NClients] { 
             {"Marko Maenie", "Tesla", 2000},
             {"Okie Kokrei", "BMW", 0},
@@ -102,3 +112,4 @@ int main()
 
     return 0;
 }
+
