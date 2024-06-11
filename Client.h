@@ -10,13 +10,13 @@ struct Client
 	char marka[100] = "";
 	double cash = 0;
 
-	void fillClient() {
+	/*void fillClient() {
 		cout << "Input name: ";
 		cin.getline(name, 100);
 		cout << "Input car: ";
 		cin.getline(marka, 100);
 		
-	}
+	}*/
 
 	void showClient() {
 		cout << "Name: " << name << endl;
@@ -24,7 +24,7 @@ struct Client
 		cout << "Cash: " << cash << " USD.\n\n";
 	}
 
-	void saveToTextFile(FILE* fp) {
+	/*void saveToTextFile(FILE* fp) {
 		fprintf(fp, "\n%s\n%s\n%0.2lf", name, marka, cash);
 	}
 
@@ -35,5 +35,5 @@ struct Client
 		fgets(marka, 100, fp);
 		marka[strlen(marka) - 1] = '\0';
 		fscanf_s(fp, "%lf", &cash);
-	}
+	}*/
 };
