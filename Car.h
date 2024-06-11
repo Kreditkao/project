@@ -2,13 +2,10 @@
 #include <iostream>
 #include <cstring>
 #include <cstdio>
-using namespace std;
-
-#include <iostream>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
+
 
 struct Product {
     string name;
